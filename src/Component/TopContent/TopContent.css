@@ -77,9 +77,7 @@
    }
    .topContent__container>p{
     font-size: 15px;
-    position: inherit;
-    top: 2vh;
-    right: 15vh;
+    padding-right: 0px;
    }
    .topContent__workButton{
         position: relative;

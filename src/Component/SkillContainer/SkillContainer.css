@@ -62,6 +62,9 @@
         justify-content: center;
         align-items: center;
     }
+    .skillheader{
+        display: block;
+    }
     .skillContainer__image>img{
         display: none;
     }
