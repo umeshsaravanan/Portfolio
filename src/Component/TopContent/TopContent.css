@@ -66,9 +66,9 @@
       display: flex;
       flex-wrap: wrap;
       position: relative;
-      top: 100px;
+      top: 200px;
       left: 20px;
-      width: 50%;
+      width: 30%;
       
     }
    .topContent__container>h1{
