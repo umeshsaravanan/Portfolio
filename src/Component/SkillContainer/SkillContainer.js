@@ -8,7 +8,7 @@ import { LinearProgress} from '@mui/material'
 const SkillContainer = () => {
   return (
     <Element className='skillContainer' id='skills'>
-        <div className='skillheader'>
+        <div className='skillContainer__skillheader'>
         <h1>SKILLS</h1>
         </div>
         <div className='skillContainer__image'>
