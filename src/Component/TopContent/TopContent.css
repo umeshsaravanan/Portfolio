@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Crimson+Text&family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Crimson+Text&family=Montserrat:ital,wght@0,300;1,500&display=swap');
+
+.topContent{
+    color: white;
+    position: relative;
+}
+.topContent__container{
+    position: absolute;
+    top: 300px;
+    left: 150px;
+}
+.topContent__container>p{
+    letter-spacing: 1px;
+    padding-right: 5px;
+    padding-top: 20px;
+    text-align: left;
+}
+.topContent__container>a>button{
+    margin-top: 30px;
+    text-align: left;
+    margin-right: 5px;
+    border: none;
+    border-radius: 2px;
+    outline: none;
+}
+.topContent__container>h1{
+    font-size: 50px;
+    font-family: "Montserret",sans-serif;
+}
+.topContent__downloadButton{
+    color: white;
+    background-color: #235790;
+    font-size: 14px;
+    padding: 10px 30px;
+    font-family: "Montserret",sans-serif;
+    font-weight: 300;
+    cursor: pointer;
+    margin-right:10px;
+}
+.topContent__workButton{
+    color: white;
+    border: 1px solid white !important;
+    background-color: transparent;
+    font-size: 14px;
+    padding: 9px 45px;
+    font-family: "Montserret",sans-serif;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.topContent__downloadButton:hover{
+    color: #235790;
+    background-color: white;
+    font-weight: 600;
+}
+.topContent__workButton:hover{
+    color: black;
+    background-color: white;
+    font-weight: 600;
+}
+
+@media screen and (max-width:720px){
+   
+    .topContent__container{
+      display: flex;
+      flex-wrap: wrap;
+      position: relative;
+      top: 100px;
+      left: 20px;
+      width: 50%;
+      
+    }
+   .topContent__container>h1{
+    font-size: 20px;
+    
+   }
+   .topContent__container>p{
+    font-size: 15px;
+    position: inherit;
+    top: 2vh;
+    right: 15vh;
+   }
+   .topContent__workButton{
+        position: relative;
+   }
+   
+}

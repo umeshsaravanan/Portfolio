@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Crimson+Text&family=Josefin+Sans&family=Montserrat:ital,wght@0,300;1,500&display=swap');
+.experience{
+    display: flex;
+    flex-direction: column;
+    border: 2px dotted white;
+    border-radius: 10px;
+    width: 200px;
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    overflow: hidden;
+}
