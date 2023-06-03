@@ -38,9 +38,9 @@ class Header extends Component {
                 <h4>Contact</h4>
             </Link>
             
-            <h4 className='header__rightButton' onClick={()=>{
-                alert("Thanks for Joining :)",1);
-            }}>Join With Me</h4>
+            <Link to='joinme' smooth={true} duration={500} offset={-80}>
+                <h4>Join with Me</h4>
+            </Link>
 
         </div>
       

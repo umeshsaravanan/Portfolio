@@ -20,13 +20,6 @@ const ProjectContainer = () => {
             desc:"Click here see my Front End Web Pages",
             link:"https://drive.google.com/drive/folders/1czPZf4P4AW7AB8hpVp-GanOSMrmwH3e0?usp=sharing"
         },
-        // {
-        //     img:ProjectImage,
-        //     title:"Skill",
-        //     desc:"Hi this my projects.I  have leanred lot of in this fields",
-        //     link:"www.google.com"
-        // },
-       
     ]
   return (
    <Element className='projectContainer' id='projects'>
