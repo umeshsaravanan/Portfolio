@@ -69,4 +69,4 @@ const Join = () => {
         </Element>
     )
 }
-export default Join
+export default Join;
