@@ -24,7 +24,7 @@ class Header extends Component {
                     <div className='menuIcon' onClick={this.handleClick}>
                         {this.state.clicked ? (<FaTimes size={20} style={{ color: 'white' }} />) : (<FaBars size={20} style={{ color: 'white' }} />)}
                     </div>
-                    <h1 style={{ display: 'inline-block' }}>Smart<span> Work</span></h1>
+                    <h1>Smart<span> Work</span></h1>
                 </div>
                 <ul className={this.state.clicked ? "navbarRight active" : "navbarRight"}>
                     <li>

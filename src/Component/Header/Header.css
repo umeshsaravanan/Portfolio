@@ -54,6 +54,11 @@
         transition: .5s;
     }
 
+    .navbarLeft {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
     .navbarRight.active {
         left: 20%;
         background-color: rgb(0, 0, 0);
