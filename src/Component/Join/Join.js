@@ -34,7 +34,7 @@ const Join = () => {
     return (
         <Element className="join" id="joinme">
             <h1 className="head">Just send a Message</h1>
-            <div>
+            <div className="cc">
                 <form ref={form} className="form-container" onSubmit={sendEmail}>
                     <label>
                         Username:

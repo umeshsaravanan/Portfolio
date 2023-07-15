@@ -64,11 +64,12 @@
    
     .topContent__container{
       display: flex;
+      flex-direction: column;
       flex-wrap: wrap;
       position: relative;
       top: 150px;
       left: 20px;
-      width: 30%;
+      width: 60%;
       
     }
    .topContent__container>h1{

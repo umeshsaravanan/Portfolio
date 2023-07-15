@@ -1,12 +1,13 @@
 .head {
-    margin-top: 200px;
     text-align: center;
     color: white;
     margin-bottom: 20px;
 }
-
+.cc{
+    margin-left: 40px;
+}
 .form-container {
-    width: 500px;
+    width: 400px;
     margin: 0 auto;
     padding: 20px;
     background-color: black;
@@ -47,8 +48,8 @@
 .form-container button[type="submit"]:hover {
     background-color: #3085e0;
 }
-@media screen and (max-width:720px) {
-    .form-container {
-        width: 400px;
+@media screen and (max-width:1040px) {
+    .head {
+        margin-top: 100px;
     }
 }

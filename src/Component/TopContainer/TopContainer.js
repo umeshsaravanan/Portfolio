@@ -6,7 +6,7 @@ import "./TopContainer.css"
 
 const TopContainer = () => {
   return (
-    <Element name='about' className='topContainer'>
+    <Element name='about' className='topContainer mask'>
         <TopContent/>
         
     </Element>

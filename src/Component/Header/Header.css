@@ -1,132 +1,78 @@
 @import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alata&family=Crimson+Text&display=swap');
 
-.header{
+.header {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
     color: white;
+    position: fixed;
+    z-index: 10;
+    width: 100vw;
     background-color: black;
-    align-items: center;
-    top: 0;
-    position: sticky;
-    position: -webkit-sticky;
-    z-index: 2000;
-    
 }
-.header__left{
-    flex: 0.4;
-
+.navbarLeft h1 span {
+    color: #235790;
 }
-.header__left>h1{
-    text-align: center;
-    letter-spacing: 1px;
-    padding: 20px 0;
-    font-family: "Alata",sans-serif;
-}
-.header__left>h1>span{
-    color: #3b81c3;
-}
-#header__right{
+.navbarRight {
     display: flex;
-    flex: 0.6;
-    justify-content: space-evenly;
-    align-items: center;
 }
-#header__right>a>h4{
-    font-size: 18px;
-    cursor: pointer;
-    transition:transform 200ms ease-in-out;
-    font-family: "Crimson Text",serif;
-    padding: 20px 0;
-    letter-spacing: 1px;
+
+.navbarRight li {
+    padding: 0 1rem;
 }
-#header__right>a>h4:hover{
-    transform: scale(1.09);
-    background-color: #235790;
-    color: white;
-    padding: 5px 20px;
-    border-radius: 2px;
-    letter-spacing: 2px;
-    font-family: "Crimson Text",serif;
-    font-size: 18px;
-    cursor: pointer;
+
+.navbarRight li a {
+    font-size: 1.2rem;
+    font-weight: 500;
 }
-.header__rightButton{
-    background-color: #235790;
-    color: white;
-    padding: 5px 20px;
-    border-radius: 2px;
-    cursor: pointer;
+.navbarRight li a h4:hover{
+    border-radius: 5px;
+    padding: 0 1rem;
+    background-color: #2f80d7;
 }
-.header__left>button{
-    display: none;
-}
-#header__right>a>h4:hover::after{
-    content: "";
-    width: 60%;
-    height: 2px;
-    background-color: white;
-    position: absolute;
-    bottom: -4px;
-    left: 20px;
-}
-#mobile{
+
+.menuIcon {
     display: none;
 }
 
-@media screen and (max-width:720px) {
-    .header{
+.hide {
+    display: none;
+}
+@media screen and (max-width:1040px) {
+    .navbarRight {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100vh;
+        position: absolute;
         top: 0;
-        position: sticky;
-        position: -webkit-sticky;
-        z-index: 2000;     
-        width: 600px;
+        left: -100%;
+        z-index: -3;
+        transition: .5s;
     }
-   .header__left{
-    display: flex;
-    align-items: center;
-    text-align: center;
-    
-    
-   }
-   #mobile{
-    display: block;
-   
-    padding: 0 10px 0 10px;
-   
-   }
-   .header__left>h1{
-    font-size: 25px;
-    width: 220px;
-   }
-    #header__right{
-        display: block;
-        position: fixed;       
-        margin-top: 390px;
-        background-color: rgba(0, 0, 0, 0.345);
-        left: -200px;
-        transition: 0.3s ease-in-out;
-        
-     }
-    
-     #header__right>a>h4{
-        padding-left: 30px;  
-        font-size: 15px;
-        
-     }
 
-     #mobile i{
-        font-size: 25px;
-        cursor: pointer;
-     }
-     #header__right.active{
-        left: 0px;
-     }
-
-     /* right */
-    #header__right>a>h4:hover{
-        transform: scale(1.01);
-       
+    .navbarRight.active {
+        left: 20%;
+        background-color: rgb(0, 0, 0);
+        z-index: 1;
     }
-     
+
+    .menuIcon {
+        display: initial;
+        margin-right: 40vw;
+    }
+
+    .navbarRight li {
+        margin: 1rem;
+    }
+
+    .navbarRight li a {
+        font-size: 1.5rem;
+    }
+    .hide {
+        display: initial;
+    }
 }
-

@@ -6,10 +6,15 @@
     margin: 200px 0 100px;
     align-items: center;
 }
+.Both {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .contact__container{
     border: 1px solid white;
     border-radius: 5px;
-    width: 600px;
+    width: 500px;
     height: 200px;
     display: flex;
     flex-direction: column;
@@ -32,4 +37,12 @@
 }
 .contact__icons>a>button{
     color: white;
+}
+
+@media screen and (max-width: 1040px) {
+
+    .Both {
+        flex-direction: column;
+    }
+    
 }
