@@ -10,7 +10,11 @@
     position: fixed;
     z-index: 10;
     width: 100vw;
-    background-color: black;
+    background-color: transparent;
+}
+.header-bg{
+    background-color: rgba(0, 0, 0, 0.85);
+    transition: .5s;
 }
 .navbarLeft h1 span {
     color: #235790;
