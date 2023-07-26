@@ -20,7 +20,7 @@ const TopContent = () => {
               <span style={{fontSize:'30px',fontWeight:'bold'}}>{text}</span>
               <span style={{color: '#235790'}}><Cursor/></span>
             </h3>
-            <a href='https://drive.google.com/file/d/1sdKGKSgxt1-6Iogm4nwtOjjTmoviJAY0/view?usp=sharing'>
+            <a href='https://drive.google.com/file/d/153xFCB1v8jVqo8Mb3JP8kKXbLyrIQsY2/view?usp=drive_link'>
                 <button className='topContent__downloadButton'>Download CV</button>
             </a>
             <Link to='projects' smooth={true} duration={500} offset={-80}>
