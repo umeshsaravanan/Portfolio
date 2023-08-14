@@ -1,18 +1,21 @@
 .head {
     text-align: center;
     color: white;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 .cc{
-    margin-left: 40px;
+    display: flex;
+    justify-content: space-evenly;
 }
 .form-container {
     width: 400px;
-    margin: 0 auto;
     padding: 20px;
-    background-color: black;
+    background-color: transparent;
     border: 1px solid #ccc;
     border-radius: 5px;
+}
+.label-style {
+    font-size: 20px;
 }
 
 .form-container label {
@@ -48,8 +51,14 @@
 .form-container button[type="submit"]:hover {
     background-color: #3085e0;
 }
-@media screen and (max-width:1040px) {
-    .head {
-        margin-top: 100px;
+
+.anim-container {
+    width: 500px;
+    height: 500px;
+  }
+@media screen and (max-width:460px) {
+    
+    .anim-container {
+        display: none;
     }
 }

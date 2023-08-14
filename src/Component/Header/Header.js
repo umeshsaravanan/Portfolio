@@ -22,6 +22,11 @@ const Header = () => {
             setBg(false);
         }
     }
+    if(click) {
+        document.body.classList.add('active-modal')
+    } else {
+        document.body.classList.remove('active-modal')
+    }
 
     window.addEventListener("scroll",changeBg);
     return (
@@ -36,34 +41,28 @@ const Header = () => {
             <ul className={click ? "navbarRight active" : "navbarRight"}>
                 <li>
                     <Link onClick={handleLinks} to='about' smooth={true} duration={500} offset={-80}>
-                        <h4>About Me</h4>
+                        <h3>About Me</h3>
                     </Link>
                 </li>
                 <li>
                     <Link onClick={handleLinks} to='skills' smooth={true} duration={500} offset={-190}>
-                        <h4>Skills</h4>
+                        <h3>Skills</h3>
                     </Link>
                 </li>
                 <li>
                     <Link onClick={handleLinks} to='projects' smooth={true} duration={500} offset={-80}>
-                        <h4>Project</h4>
+                        <h3>Project</h3>
                     </Link>
                 </li>
                 <li>
                     <Link onClick={handleLinks} to='exp' smooth={true} duration={500} offset={-80}>
-                        <h4>Experience</h4>
+                        <h3>Experience</h3>
                     </Link>
                 </li>
 
                 <li>
-                    <Link onClick={handleLinks} to='contact' smooth={true} duration={500} offset={-80}>
-                        <h4>Contact</h4>
-                    </Link>
-                </li>
-
-                <li>
-                    <Link className='hide' onClick={handleLinks} to='joinme' smooth={true} duration={500} offset={-80}>
-                        <h4>Join with Me</h4>
+                    <Link onClick={handleLinks} to='join' smooth={true} duration={500} offset={-80}>
+                        <h3>Contact</h3>
                     </Link>
                 </li>
 

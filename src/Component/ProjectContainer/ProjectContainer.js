@@ -1,7 +1,7 @@
 import React from 'react'
 // import ProjectImage from "../../Assets/pictures/SkillImage.jpg"
 import HTMLCSSImage from "../../Assets/pictures/htmlcss.jpg"
-import JavaImage from "../../Assets/pictures/java.png"
+import ReactjsImage from "../../Assets/pictures/Reactjs.png"
 import { Element } from 'react-scroll'
 import Project from '../Project/Project'
 import "./ProjectContainer.css"
@@ -9,16 +9,16 @@ import "./ProjectContainer.css"
 const ProjectContainer = () => {
     const projects=[
         {
-            img:JavaImage,
-            title:"Java",
-            desc:"Click here and see my Java Projects",
-            link:"https://drive.google.com/drive/folders/19kHLT9r887lHHqtaEsDrNUvk-tJr0gqd?usp=sharing"
+            img:ReactjsImage,
+            title:"React js",
+            desc:"Click here and see my React js Projects",
+            link:"https://todo-list-853a5.web.app/"
         },
         {
             img:HTMLCSSImage,
             title:"Front End Web Pages",
             desc:"Click here see my Front End Web Pages",
-            link:"https://drive.google.com/drive/folders/1czPZf4P4AW7AB8hpVp-GanOSMrmwH3e0?usp=sharing"
+            link:"https://umeshsaravanan.github.io/Revive-CSE/"
         },
     ]
   return (

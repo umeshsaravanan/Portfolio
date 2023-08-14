@@ -6,6 +6,7 @@ import ProjectContainer from "./Component/ProjectContainer/ProjectContainer";
 import "./App.css"
 import ExperienceContainer from "./Component/ExperienceContainer/ExperienceContainer";
 import Contact from "./Component/Contact/Contact";
+import Join from "./Component/Join/Join";
 
 
 const App=()=>{
@@ -16,6 +17,7 @@ const App=()=>{
       <SkillContainer/>
       <ProjectContainer/>
       <ExperienceContainer/>
+      <Join />
       <Contact/>
     </div>
   )

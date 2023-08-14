@@ -1,7 +1,7 @@
 import React from 'react'
 import "./SkillContainer.css"
 import { Element } from 'react-scroll'
-import SkillImage from "../../Assets/pictures/SkillImage.jpg"
+import SkillImage from "../../Assets/pictures/SkillImage.png"
 import { LinearProgress } from '@mui/material'
 
 

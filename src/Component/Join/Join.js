@@ -4,6 +4,8 @@ import emailjs from '@emailjs/browser'
 import "./Join.css"
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Lottie from 'lottie-react'
+import animationData from '../../Assets/animation_llamo7b6.json'
 
 const Join = () => {
 
@@ -17,7 +19,7 @@ const Join = () => {
                 e.target.reset();
                 toast.success('Message Sent!', {
                     position: "top-right",
-                    autoClose: 5000,
+                    autoClose: 2000,
                     hideProgressBar: false,
                     closeOnClick: true,
                     pauseOnHover: true,
@@ -33,10 +35,10 @@ const Join = () => {
 
     return (
         <Element className="join" id="joinme">
-            <h1 className="head">Just send a Message</h1>
+            <h1 className="head">Leave a Chat</h1>
             <div className="cc">
                 <form ref={form} className="form-container" onSubmit={sendEmail}>
-                    <label>
+                    <label className="label-style ">
                         Username:
                         <input
                             type="text"
@@ -45,7 +47,7 @@ const Join = () => {
                         />
                     </label>
                     <br />
-                    <label>
+                    <label className="label-style ">
                         Email:
                         <input
                             type="email"
@@ -54,7 +56,7 @@ const Join = () => {
                         />
                     </label>
                     <br />
-                    <label>
+                    <label className="label-style ">
                         Description:
                         <textarea
                             name="message"
@@ -62,9 +64,10 @@ const Join = () => {
                         />
                     </label>
                     <br />
-                    <button type="submit" className="submit-button">Submit</button>
+                    <button type="submit" className="submit-button">Send</button>
                     <ToastContainer />
                 </form>
+                <Lottie className="anim-container" animationData={animationData}/>
             </div>
         </Element>
     )

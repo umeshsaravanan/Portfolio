@@ -1,21 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+}
 .contact{
+    margin-top: 200px;
     display: flex;
     flex-direction: column;
     color: white;
     justify-content: center;
-    margin: 200px 0 100px;
     align-items: center;
-}
-.Both {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    background-color: #212122;
 }
 .contact__container{
-    border: 1px solid white;
-    border-radius: 5px;
-    width: 500px;
-    height: 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
