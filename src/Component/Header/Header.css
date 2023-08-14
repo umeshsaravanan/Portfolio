@@ -67,8 +67,8 @@ body.active-modal {
         justify-content: space-between;
         align-items: center;
     }
-    .navbarLeft h1 {
-        font-size: 20px;
+    .navbarLeft>h1 {
+        font-size: 30px;
     }
     .navbarRight.active {
         left: 20%;

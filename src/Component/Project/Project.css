@@ -70,7 +70,7 @@ body.active-modal {
 .modal-content>h2, .modal-content>p {
     margin-bottom: 15px;
 }
-.modal-content>p>a{
+.modal-content>p>a, .modal-content>p>h4>a{
     color: #235790;
     text-decoration: underline;
 }
