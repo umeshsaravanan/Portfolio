@@ -57,7 +57,7 @@ body.active-modal {
     line-height: 1.4;
     background: #212122;
     padding: 14px 28px;
-    border-radius: 3px;
+    border-radius: 8px;
     max-width: 600px;
     min-width: 300px;
     min-height: 80vh;

@@ -9,11 +9,11 @@ const Contact = () => {
         <Element className='contact' id='contact'>
             <div className='contact__container'>
                 <p>
-                    Email : <span><a href="https://mail.google.com/mail/u/0/?tab=rm#inbox">umeshsaravanan13@gmail.com</a></span>
+                    <span><a href="https://mail.google.com/mail/u/0/?tab=rm#inbox">umeshsaravanan13@gmail.com</a></span>
                 </p>
                 <p>
 
-                    Github Username : <span><a href="https://github.com/umeshsaravanan?tab=repositories">umesh@GitHub</a></span>
+                    <span><a href="https://github.com/umeshsaravanan?tab=repositories">umesh@GitHub</a></span>
 
                 </p>
                 <div className='contact__icons'>
