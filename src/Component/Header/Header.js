@@ -34,7 +34,7 @@ const Header = () => {
 
             <div className="navbarLeft">
                 <div className='menuIcon' onClick={handleClick}>
-                    {click ? (<FaTimes size={20} style={{ color: 'white' }} />) : (<FaBars size={20} style={{ color: 'white' }} />)}
+                    {click ? (<FaTimes size={25} style={{ color: 'white' }} />) : (<FaBars size={25} style={{ color: 'white' }} />)}
                 </div>
                 <h1>Smart<span> Work</span></h1>
             </div>
