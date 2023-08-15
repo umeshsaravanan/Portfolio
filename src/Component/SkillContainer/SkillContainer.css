@@ -55,7 +55,7 @@
         justify-content: center;
         align-items: center;
     }
-    .skillContainer__image>img{
+    .skillContainer__image{
         display: none;
     }
    

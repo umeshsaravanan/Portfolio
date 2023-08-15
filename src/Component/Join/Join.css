@@ -61,4 +61,8 @@
     .anim-container {
         display: none;
     }
+
+    .form-container {
+        width: 100vw;
+    }
 }

@@ -1,8 +1,9 @@
 import React from 'react'
 import "./SkillContainer.css"
 import { Element } from 'react-scroll'
-import SkillImage from "../../Assets/pictures/SkillImage.png"
 import { LinearProgress } from '@mui/material'
+import Lottie from 'lottie-react'
+import animationData from '../../Assets/animation_llbod5un.json'
 
 
 const Skill = ({ title, value }) => {
@@ -20,7 +21,7 @@ const Skill = ({ title, value }) => {
     return (
       <Element className='skillContainer' id='skills'>
         <div className='skillContainer__image'>
-          <img src={SkillImage} alt="" height={300} />
+          <Lottie  className='' animationData={animationData}/>
         </div>
         <div className='skillContainer__text'>
           <h2>SKILLSET</h2>

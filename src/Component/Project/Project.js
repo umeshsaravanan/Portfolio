@@ -11,12 +11,6 @@ const Project = ({img,title,desc,link}) => {
         setShow(false)
     };
 
-    if(modal) {
-        document.body.classList.add('active-modal')
-    } else {
-        document.body.classList.remove('active-modal')
-    }
-
   return (
         <div className='project' onMouseEnter={()=>setShow(true)} onMouseLeave={()=>setShow(false)} onClick={toggleModal}>
             {
