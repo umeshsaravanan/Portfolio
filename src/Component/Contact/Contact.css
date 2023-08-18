@@ -31,5 +31,8 @@
     .contact__container{
         width: 100vw;
     }
+    .contact{
+        margin-top: 2rem;
+    }
     
 }
