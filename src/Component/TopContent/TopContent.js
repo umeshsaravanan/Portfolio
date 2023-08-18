@@ -16,7 +16,7 @@ const TopContent = () => {
     <div className='topContent'>
         <div className='topContent__container'>
             <h1>Umesh S</h1>
-            <h3>I'm a{' '}
+            <h3 style={{fontSize:'30px'}}>I'm a{' '}
               <span style={{fontSize:'30px',fontWeight:'bold'}}>{text}</span>
               <span style={{color: '#235790'}}><Cursor/></span>
             </h3>

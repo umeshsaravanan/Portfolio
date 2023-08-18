@@ -15,7 +15,7 @@ const Header = () => {
     }
 
     const changeBg = () =>{
-        if(window.scrollY>=100){
+        if(window.scrollY>=600){
             setBg(true);
         }
         else{
@@ -36,7 +36,6 @@ const Header = () => {
                 <div className='menuIcon' onClick={handleClick}>
                     {click ? (<FaTimes size={25} style={{ color: 'white' }} />) : (<FaBars size={25} style={{ color: 'white' }} />)}
                 </div>
-                <h1>Smart<span> Work</span></h1>
             </div>
             <ul className={click ? "navbarRight active" : "navbarRight"}>
                 <li>
@@ -45,7 +44,7 @@ const Header = () => {
                     </Link>
                 </li>
                 <li>
-                    <Link onClick={handleLinks} to='skills' smooth={true} duration={500} offset={-190}>
+                    <Link onClick={handleLinks} to='skills' smooth={true} duration={500} offset={-100}>
                         <h3>Skills</h3>
                     </Link>
                 </li>
@@ -55,13 +54,7 @@ const Header = () => {
                     </Link>
                 </li>
                 <li>
-                    <Link onClick={handleLinks} to='exp' smooth={true} duration={500} offset={-80}>
-                        <h3>Experience</h3>
-                    </Link>
-                </li>
-
-                <li>
-                    <Link onClick={handleLinks} to='join' smooth={true} duration={500} offset={-80}>
+                    <Link onClick={handleLinks} to='join' smooth={true} duration={500} offset={-70}>
                         <h3>Contact</h3>
                     </Link>
                 </li>

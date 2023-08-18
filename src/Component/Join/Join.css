@@ -9,19 +9,27 @@
 }
 .form-container {
     width: 400px;
+    height: 420px;
     padding: 20px;
-    background-color: transparent;
-    border: 1px solid #ccc;
+    background-color: white;
     border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px black;
 }
 .label-style {
     font-size: 20px;
+}
+.input-field{
+    background-color: #FFF7FF;
+}
+.textarea-field{
+    background-color: #FFF7FF;
+    width: min-content;
 }
 
 .form-container label {
     display: block;
     margin-bottom: 10px;
-    color: white;
+    color: black;
 }
 
 .form-container input[type="text"],
@@ -32,16 +40,17 @@
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    outline: none; 
 }
 
 .form-container textarea {
-    height: 100px;
+    height: 60px;
 }
 
 .form-container button[type="submit"] {
     width: 90%;
     padding: 10px 20px;
-    background-color: #235790;
+    background-color: #4084f4;
     color: #fff;
     border: none;
     border-radius: 4px;
@@ -49,7 +58,7 @@
 }
 
 .form-container button[type="submit"]:hover {
-    background-color: #3085e0;
+    background-color: #4285F4;
 }
 
 .anim-container {

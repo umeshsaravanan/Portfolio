@@ -57,7 +57,7 @@ const Join = () => {
                     </label>
                     <br />
                     <label className="label-style ">
-                        Description:
+                        Message:
                         <textarea
                             name="message"
                             className="textarea-field"

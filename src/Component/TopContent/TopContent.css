@@ -21,7 +21,7 @@
     text-align: left;
     margin-right: 5px;
     border: none;
-    border-radius: 2px;
+    border-radius: 4px;
     outline: none;
 }
 .topContent__container>h1{
@@ -30,7 +30,7 @@
 }
 .topContent__downloadButton{
     color: white;
-    background-color: #235790;
+    background-color: #4084f4;
     font-size: 14px;
     padding: 10px 30px;
     font-family: "Montserret",sans-serif;
@@ -50,7 +50,7 @@
 }
 
 .topContent__downloadButton:hover{
-    color: #235790;
+    color: #4084f4;
     background-color: white;
     font-weight: 600;
 }
