@@ -44,6 +44,7 @@
 
 .navbarRight li a:hover::before {
     transform: scaleX(1);
+    cursor: pointer;
 }
 .navbarRight li a:hover{
     color: rgb(121, 195, 3);
