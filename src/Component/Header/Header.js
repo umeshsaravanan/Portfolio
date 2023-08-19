@@ -6,7 +6,6 @@ import { FaBars, FaTimes } from 'react-icons/fa'
 
 const Header = () => {
     const [click, setClick] = useState(false);
-    const [bg, setBg] = useState(false);
     const handleClick = () => {
         setClick(!click);
     }
@@ -14,23 +13,14 @@ const Header = () => {
         setClick(!click);
     }
 
-    const changeBg = () =>{
-        if(window.scrollY>=600){
-            setBg(true);
-        }
-        else{
-            setBg(false);
-        }
-    }
     if(click) {
         document.body.classList.add('active-modal')
     } else {
         document.body.classList.remove('active-modal')
     }
 
-    window.addEventListener("scroll",changeBg);
     return (
-        <div className={bg?'header header-bg':'header'}>
+        <div className='header'>
 
             <div className="navbarLeft">
                 <div className='menuIcon' onClick={handleClick}>

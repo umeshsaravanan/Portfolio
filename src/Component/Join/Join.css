@@ -13,16 +13,16 @@
     padding: 20px;
     background-color: white;
     border-radius: 5px;
-    box-shadow: 0px 0px 10px 0px black;
+    box-shadow: 0px 0px 15px 0px rgb(121, 195, 3);
 }
 .label-style {
     font-size: 20px;
 }
 .input-field{
-    background-color: #FFF7FF;
+    background-color: #f0edef;
 }
 .textarea-field{
-    background-color: #FFF7FF;
+    background-color: #f0edef;
     width: min-content;
 }
 
@@ -45,20 +45,6 @@
 
 .form-container textarea {
     height: 60px;
-}
-
-.form-container button[type="submit"] {
-    width: 90%;
-    padding: 10px 20px;
-    background-color: #4084f4;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-.form-container button[type="submit"]:hover {
-    background-color: #4285F4;
 }
 
 .anim-container {

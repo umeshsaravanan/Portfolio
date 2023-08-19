@@ -24,7 +24,7 @@ const ProjectContainer = () => {
         },
         {
             title:"Todo List",
-            desc:"This Todo List lets you add, complete, and delete tasks effortlessly and build using React js and Firebase. Check it out and see my coding skills in action!",
+            desc:"This Todo List lets you add, complete, and delete tasks effortlessly, build using React js and Firebase. Check it out and see my coding skills in action!",
             link:"https://todo-list-180823.netlify.app/",
             Git : "https://github.com/umeshsaravanan/Todo_List",
             slide : [Todo1,Todo2,Todo3,Todo4]

@@ -1,18 +1,16 @@
 .project {
     display: flex;
-    width: 100vw;
-    gap: 1rem;
-    margin-bottom: 2rem;
-}
-.projectImage_container{
-    flex: 2;
-}
-.projectDescription {
     flex: 1;
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    justify-content: center;
+}
+
+.projectDescription {
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px 0px rgb(121, 195, 3);
+    background-image: url("../../Assets/pictures/project-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .titledesc, .links {
     margin: 1rem;
@@ -30,17 +28,6 @@
 @media screen and (max-width : 460px) {
     .project {
         display: block;
-    }
-    .projectImage_container{
-        display: none;
-    }
-    .projectDescription {
-        width: 90%;
-        margin: 0 auto;
-        border-radius: 8px;
-        box-shadow: 0px 0px 10px 0px white;
-        background-image: url("../../Assets/pictures/project-bg.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
+        margin-bottom: 2rem
     }
 }

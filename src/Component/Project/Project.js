@@ -7,9 +7,6 @@ const Project = ({title,desc,link,git,slide}) => {
 
   return (
       <div className='project'>
-          <div className='projectImage_container' style={{marginBottom : '2rem'}}>
-            <ImageSlider slide={slide} />
-          </div>
           <div className='projectDescription'>
               <div className='titledesc'>
                   <h2>{title}</h2>

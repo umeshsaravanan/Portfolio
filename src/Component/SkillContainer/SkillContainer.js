@@ -34,7 +34,6 @@ const Skill = ({ title, value }) => {
           <Skill title="HTML and CSS" value={90} />
           <Skill title="Js" value={60} />
           <Skill title="React js" value={50} />
-          <Skill title="Java Frames" value={40} />
         </div>
       </Element>
     );
