@@ -6,7 +6,7 @@ import {useTypewriter, Cursor} from 'react-simple-typewriter'
 const TopContent = () => {
   
   const [text] = useTypewriter({
-    words: ['UI/UX Designer','Programmer','Creative Designer'],
+    words: ['Programmer','Java Developer','Creative Designer'],
     loop :{},
     typeSpeed: 120,
     deleteSpeed: 80,

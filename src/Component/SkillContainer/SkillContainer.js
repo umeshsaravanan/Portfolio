@@ -29,11 +29,11 @@ const Skill = ({ title, value }) => {
         </div>
         <div className='skillContainer__text'>
           <h2>SKILLSET</h2>
-          <Skill title="C and C++" value={75} />
+          <Skill title="C and C++" value={55} />
           <Skill title="Java" value={80} />
           <Skill title="HTML and CSS" value={90} />
           <Skill title="Js" value={60} />
-          <Skill title="React js" value={50} />
+          <Skill title="MERN Stack" value={65} />
         </div>
       </Element>
     );

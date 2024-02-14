@@ -1,4 +1,4 @@
-import React, { useRef } from "react"
+import React, { useRef, useState } from "react"
 import { Element } from 'react-scroll'
 import emailjs from '@emailjs/browser'
 import "./Join.css"
@@ -8,13 +8,14 @@ import Lottie from 'lottie-react'
 import animationData from '../../Assets/animation_llamo7b6.json'
 
 const Join = () => {
-
+    const [sent, isSent] = useState(true);
     const form = useRef();
     const sendEmail = (e) => {
         e.preventDefault();
-
+        isSent(false);
         emailjs.sendForm('service_i61j6zk', 'template_jewutck', form.current, 'fWJorPndXxQL1fVbe')
             .then((result) => {
+                isSent(true);
                 console.log(result.text);
                 e.target.reset();
                 toast.success('Message Sent!', {
@@ -29,8 +30,8 @@ const Join = () => {
                 });
             }, (error) => {
                 console.log(error.text);
+                isSent(true);
             });
-
     };
 
     return (
@@ -44,6 +45,7 @@ const Join = () => {
                             type="text"
                             name="user_name"
                             className="input-field"
+                            required
                         />
                     </label>
                     <br />
@@ -53,6 +55,7 @@ const Join = () => {
                             type="email"
                             name="user_email"
                             className="input-field"
+                            required
                         />
                     </label>
                     <br />
@@ -61,10 +64,11 @@ const Join = () => {
                         <textarea
                             name="message"
                             className="textarea-field"
+                            required
                         />
                     </label>
                     <br />
-                    <button className="submit-button">Send</button>
+                    <button className="submit-button">{sent?"Send":"Sending..."}</button>
                     <ToastContainer />
                 </form>
                 <Lottie className="anim-container" animationData={animationData}/>
