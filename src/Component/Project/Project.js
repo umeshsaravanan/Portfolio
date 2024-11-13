@@ -13,7 +13,7 @@ const Project = ({title,desc,link,git,slide}) => {
                   <p>{desc}</p>
               </div>
               <div className='links'>
-                <a href={link} target='blank'> click here to View</a>
+                {link ? <a href={link} target='blank'> click here to View</a> : null}
                 <h3>Git Repositorie:</h3>
                 <a href={git} target='blank'>umeshsaravanan@Github</a>
               </div>

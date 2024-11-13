@@ -24,6 +24,7 @@
 .textarea-field{
     background-color: #f0edef;
     width: min-content;
+    resize: none;
 }
 
 .form-container label {
@@ -43,14 +44,11 @@
     outline: none; 
 }
 
-.form-container textarea {
-    height: 60px;
-}
-
 .anim-container {
     width: 500px;
     height: 500px;
   }
+  
 @media screen and (max-width:460px) {
     
     .anim-container {

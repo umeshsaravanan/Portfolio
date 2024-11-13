@@ -40,7 +40,7 @@ const Join = () => {
             <div className="cc">
                 <form ref={form} className="form-container" onSubmit={sendEmail}>
                     <label className="label-style ">
-                        Username:
+                        Name:
                         <input
                             type="text"
                             name="user_name"
@@ -65,6 +65,7 @@ const Join = () => {
                             name="message"
                             className="textarea-field"
                             required
+                            rows={4}
                         />
                     </label>
                     <br />
