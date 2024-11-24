@@ -26,7 +26,7 @@ const SkillContainer = () => {
         <Lottie animationData={animationData} />
       </div>
       <div className='skillContainer__text'>
-        <h2>SKILLSET</h2>
+        <h2 className='skillHeader'>SKILLSET</h2>
         <div className="skills_logo">
           {technologies.map((tech, index) => (
             <div key={tech.name} style={{ animationDelay: `${index * 0.2}s`, textAlign: 'center', flex: '1' }} className='movement'>
