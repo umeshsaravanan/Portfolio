@@ -25,19 +25,17 @@
     text-decoration: underline;
 }
 
-@media screen and (max-width : 460px) {
+@media screen and (max-width : 520px) {
     .project {
         display: block;
         margin-bottom: 2rem;
-        font-size: 22px;
     }
     .projectDescription {
         width: 90vw;
         margin: 0px auto;
-        font-size: 20px;
-        height: 80vh;
+        height: 75vh;
     }
-    .projectDescription h2,.projectDescription h3{
-        font-size: 25px;
+    .projectDescription>.titledesc>h2,.projectDescription>.links>h3{
+        font-size: 22px;
     }
 }

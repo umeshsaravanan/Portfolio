@@ -65,4 +65,8 @@
         margin: 0px auto;
         font-size: small;
     }
+
+    .label-style {
+        font-size: 16px;
+    }
 }
