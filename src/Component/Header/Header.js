@@ -39,7 +39,7 @@ const Header = () => {
                     </Link>
                 </li>
                 <li>
-                    <Link onClick={handleLinks} to='projects' smooth={true} duration={500} offset={-80}>
+                    <Link onClick={handleLinks} to='projects' smooth={true} duration={500} offset={-60}>
                         <h3>Project</h3>
                     </Link>
                 </li>

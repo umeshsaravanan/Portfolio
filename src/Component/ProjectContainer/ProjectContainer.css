@@ -26,4 +26,9 @@
     padding: 1rem;
 }
 
+@media screen and (max-width : 460px) {
+    .projectContainer__projects{
+        margin-top: 0px;
+    }
+}
 

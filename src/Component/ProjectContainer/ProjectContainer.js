@@ -22,7 +22,7 @@ const ProjectContainer = () => {
             Git: "https://github.com/umeshsaravanan/ticket_reservation"
         },
         {
-            title: "C Compiler",
+            title: "TriDesk",
             desc: "This project includes a code compiler and runner for C/C++, a file explorer clone for managing files, and a folder comparison tool to highlight directory differences.",
             Git : "https://github.com/umeshsaravanan/inc"
         },

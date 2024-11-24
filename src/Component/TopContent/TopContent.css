@@ -32,6 +32,10 @@
     font-size: 50px;
     font-family: "Montserret", sans-serif;
 }
+.topContent__container>h3 {
+    font-size: 30px;
+    font-family: "Montserret", sans-serif;
+}
 
 .topContent__downloadButton {
     color: white;
@@ -74,15 +78,13 @@
         flex-direction: column;
         flex-wrap: wrap;
         position: relative;
-        top: 520px;
+        top: 420px;
         left: 20px;
-        width: 70%;
-
+        width: 80%;
     }
 
-    .topContent__container>h1 {
+    .topContent__container>h1,.topContent__container>h3 {
         font-size: 20px;
-
     }
 
     .topContent__container>p {
