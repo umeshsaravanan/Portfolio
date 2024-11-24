@@ -3,25 +3,30 @@
     color: white;
     margin-bottom: 30px;
 }
-.cc{
+
+.cc {
     display: flex;
     justify-content: space-evenly;
 }
+
 .form-container {
     width: 400px;
     height: 420px;
     padding: 20px;
     background-color: white;
     border-radius: 5px;
-    box-shadow: 0px 0px 15px 0px rgb(121, 195, 3);
+    box-shadow: 0px 0px 15px 0px gray;
 }
+
 .label-style {
     font-size: 20px;
 }
-.input-field{
+
+.input-field {
     background-color: #f0edef;
 }
-.textarea-field{
+
+.textarea-field {
     background-color: #f0edef;
     width: min-content;
     resize: none;
@@ -41,16 +46,16 @@
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    outline: none; 
+    outline: none;
 }
 
 .anim-container {
     width: 500px;
     height: 500px;
-  }
-  
+}
+
 @media screen and (max-width:460px) {
-    
+
     .anim-container {
         display: none;
     }

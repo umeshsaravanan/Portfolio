@@ -69,10 +69,10 @@ const Join = () => {
                         />
                     </label>
                     <br />
-                    <button className="submit-button">{sent?"Send":"Sending..."}</button>
+                    <button className="submit-button">{sent ? "Send" : "Sending..."}</button>
                     <ToastContainer />
                 </form>
-                <Lottie className="anim-container" animationData={animationData}/>
+                <Lottie className="anim-container" animationData={animationData} />
             </div>
         </Element>
     )

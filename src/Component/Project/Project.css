@@ -28,6 +28,11 @@
 @media screen and (max-width : 460px) {
     .project {
         display: block;
-        margin-bottom: 2rem
+        margin-bottom: 2rem;
+        font-size: 25px;
+    }
+    .projectDescription {
+        width: 25rem;
+        height: 40rem;
     }
 }

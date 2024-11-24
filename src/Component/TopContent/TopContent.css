@@ -1,22 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Alata&family=Crimson+Text&family=Montserrat:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alata&family=Crimson+Text&family=Montserrat:ital,wght@0,300;1,500&display=swap');
 
-.topContent{
+.topContent {
     color: white;
     position: relative;
 }
-.topContent__container{
+
+.topContent__container {
     position: absolute;
     top: 300px;
     left: 150px;
 }
-.topContent__container>h3{
+
+.topContent__container>h3 {
     letter-spacing: 1px;
     padding-right: 5px;
     padding-top: 20px;
     text-align: left;
 }
-.topContent__container>a>button{
+
+.topContent__container>a>button {
     margin-top: 30px;
     text-align: left;
     margin-right: 5px;
@@ -24,64 +27,71 @@
     border-radius: 4px;
     outline: none;
 }
-.topContent__container>h1{
+
+.topContent__container>h1 {
     font-size: 50px;
-    font-family: "Montserret",sans-serif;
+    font-family: "Montserret", sans-serif;
 }
-.topContent__downloadButton{
+
+.topContent__downloadButton {
     color: white;
     background-color: #4084f4;
     font-size: 14px;
     padding: 10px 30px;
-    font-family: "Montserret",sans-serif;
+    font-family: "Montserret", sans-serif;
     font-weight: 300;
     cursor: pointer;
-    margin-right:10px;
+    margin-right: 10px;
 }
-.topContent__workButton{
+
+.topContent__workButton {
     color: black;
     border: 1px solid white !important;
     background-color: rgb(255, 255, 255);
     font-size: 14px;
     padding: 9px 45px;
-    font-family: "Montserret",sans-serif;
+    font-family: "Montserret", sans-serif;
     font-weight: 300;
     cursor: pointer;
 }
 
-.topContent__downloadButton:hover{
+.topContent__downloadButton:hover {
     color: #4084f4;
     background-color: white;
     font-weight: 600;
 }
-.topContent__workButton:hover{
+
+.topContent__workButton:hover {
     color: black;
     background-color: white;
     font-weight: 600;
 }
 
-@media screen and (max-width:720px){
-   
-    .topContent__container{
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
-      position: relative;
-      top: 320px;
-      left: 20px;
-      width: 70%;
-      
-    }
-   .topContent__container>h1{
-    font-size: 20px;
-    
-   }
-   .topContent__container>p{
-    font-size: 15px;
-    padding-right: 0px;
-   }
-   .topContent__workButton{
+@media screen and (max-width:720px) {
+
+    .topContent__container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
         position: relative;
-   }
-   
+        top: 520px;
+        left: 20px;
+        width: 70%;
+
+    }
+
+    .topContent__container>h1 {
+        font-size: 20px;
+
+    }
+
+    .topContent__container>p {
+        font-size: 15px;
+        padding-right: 0px;
+    }
+
+    .topContent__workButton {
+        position: relative;
+    }
+
 }

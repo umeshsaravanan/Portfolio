@@ -4,40 +4,40 @@ import { Element } from 'react-scroll'
 import { LinearProgress } from '@mui/material'
 import Lottie from 'lottie-react'
 import animationData from '../../Assets/animation_llbod5un.json'
+import { FaHtml5, FaCss3Alt, FaReact, FaJava, FaNodeJs } from 'react-icons/fa';
+import { SiJavascript, SiExpress, SiMongodb, SiMysql } from 'react-icons/si';
 
 
-const Skill = ({ title, value }) => {
-  const linearProgressStyle = {
-    height: `${5}px`,
-    overflow: 'hidden',
-  };
-    return (
-      <div className='skillContainer__skillSet'>
-        <h5>{title}</h5>
-        <div className={`skillContainer__slider skillContainer__slider${value}`}>
-          <LinearProgress variant='determinate' value={value} style={linearProgressStyle}/>
+const SkillContainer = () => {
+  const technologies = [
+    { icon: <FaJava style={{ color: '#007396' }} /> },
+    { icon: <FaHtml5 style={{ color: '#E34F26' }} /> },
+    { icon: <FaCss3Alt style={{ color: '#1572B6' }} /> },
+    { icon: <SiJavascript style={{ color: '#F7DF1E' }} /> },
+    { icon: <SiMysql style={{ color: '#00758F' }} /> },
+    { icon: <FaReact style={{ color: '#61DBFB' }} /> },
+    { icon: <SiExpress style={{ color: 'green' }} /> },
+    { icon: <FaNodeJs style={{ color: '#339933' }} /> },
+    { icon: <SiMongodb style={{ color: '#47A248' }} /> },
+  ];
+  return (
+    <Element className='skillContainer' id='skills'>
+      <div className='skillContainer__image'>
+        <Lottie animationData={animationData} />
+      </div>
+      <div className='skillContainer__text'>
+        <h2>SKILLSET</h2>
+        <div className="skills_logo">
+          {technologies.map((tech, index) => (
+            <div key={tech.name} style={{ animationDelay: `${index * 0.2}s`, textAlign: 'center', flex: '1' }} className='movement'>
+              <div style={{ fontSize: '75px' }}>{tech.icon}</div>
+            </div>
+          ))}
         </div>
       </div>
-    );
-  };
-  
-  const SkillContainer = () => {
-    return (
-      <Element className='skillContainer' id='skills'>
-        <div className='skillContainer__image'>
-          <Lottie animationData={animationData}/>
-        </div>
-        <div className='skillContainer__text'>
-          <h2>SKILLSET</h2>
-          <Skill title="C and C++" value={55} />
-          <Skill title="Java" value={80} />
-          <Skill title="HTML and CSS" value={90} />
-          <Skill title="Js" value={60} />
-          <Skill title="MERN Stack" value={65} />
-        </div>
-      </Element>
-    );
-  };
-  
+    </Element>
+  );
+};
+
 
 export default SkillContainer
