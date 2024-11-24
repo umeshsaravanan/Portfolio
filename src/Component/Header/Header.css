@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alata&family=Crimson+Text&display=swap');
 
-/* General Header Styles */
 .header {
     display: flex;
     justify-content: space-between;
@@ -9,14 +8,13 @@
     padding: 1rem;
     color: white;
     position: fixed;
-    background-color: rgba(0, 0, 0, 0.8); /* Slightly darkened background */
-    backdrop-filter: blur(10px); /* Reduced blur for a more subtle effect */
+    background-color: rgba(0, 0, 0, 0.8); 
+    backdrop-filter: blur(10px); 
     z-index: 10;
     width: 100%;
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2); 
 }
 
-/* Right Navbar Styles */
 .navbarRight {
     display: flex;
     align-items: center;
@@ -38,7 +36,6 @@
     transition: color 0.3s ease-in-out;
 }
 
-/* Hover Effect for Links */
 .navbarRight li a::before {
     content: '';
     position: absolute;
@@ -61,21 +58,21 @@
     cursor: pointer;
 }
 
-/* Mobile Menu Icon */
 .menuIcon {
     display: none;
     cursor: pointer;
-    z-index: 11; /* Ensures it stays above other content */
+    z-index: 12;
 }
 
-/* Body Scroll Lock */
 body.active-modal {
     overflow-y: hidden;
 }
 
-/* Responsive Styles for Mobile View */
+.hide {
+    display: none;
+}
+
 @media screen and (max-width: 1040px) {
-    /* Navbar collapses into a vertical menu */
     .navbarRight {
         flex-direction: column;
         align-items: center;
@@ -85,13 +82,13 @@ body.active-modal {
         position: fixed;
         top: 0;
         left: -100%;
-        background-color: rgba(0, 0, 0, 0.95); /* Slightly opaque background */
-        z-index: 9;
+        background-color: rgba(0, 0, 0, 0.95);
+        z-index: 11;
         transition: left 0.5s ease-in-out;
     }
 
     .navbarRight.active {
-        left: 0;
+        left: -15%;
     }
 
     .navbarRight li {
@@ -102,20 +99,13 @@ body.active-modal {
         font-size: 1.2rem;
     }
 
-    /* Menu Icon for Mobile */
     .menuIcon {
         display: block;
         font-size: 1.5rem;
         color: white;
     }
 
-    /* Hide the navbarLeft */
     .navbarLeft > h1 {
         font-size: 25px;
     }
-}
-
-/* Hide Element Helper */
-.hide {
-    display: none;
 }

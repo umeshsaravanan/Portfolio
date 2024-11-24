@@ -17,14 +17,14 @@ const Header = () => {
 
     const handleLinks = () => {
         setClick(false);
-        document.body.classList.remove('active-modal'); // Ensure body scroll is restored
+        document.body.classList.remove('active-modal'); 
     };
 
     return (
         <div className='header'>
             <div className="navbarLeft">
                 <div className='menuIcon' onClick={handleClick}>
-                    {click ? (<FaTimes size={25} style={{ color: 'white' }} />) : (<FaBars size={25} style={{ color: 'white' }} />)}
+                    {click ? (<FaTimes size={25} style={{ color: 'white',marginLeft: '85vw' }} />) : (<FaBars size={25} style={{ color: 'white' }} />)}
                 </div>
             </div>
             <ul className={click ? "navbarRight active" : "navbarRight"}>
