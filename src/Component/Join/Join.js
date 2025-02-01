@@ -43,7 +43,7 @@ const Join = () => {
                         Name:
                         <input
                             type="text"
-                            name="user_name"
+                            name="from_name"
                             className="input-field"
                             required
                         />
@@ -53,7 +53,7 @@ const Join = () => {
                         Email:
                         <input
                             type="email"
-                            name="user_email"
+                            name="from_email"
                             className="input-field"
                             required
                         />
